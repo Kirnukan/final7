@@ -1,0 +1,139 @@
+
+.slider-section--price{
+  margin-bottom: 52px;
+}
+.price-list {
+  overflow: visible;
+  width: 97%;
+  margin-left: 16px;
+}
+
+.price-list__list {
+  display: flex;
+  overflow: visible;
+  padding-left: 0;
+  
+}
+
+@media (min-width: $miniDesktopWidth) {
+  .price-list__list {
+    flex-direction: column;
+  }
+}
+
+.price-list__item {
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  flex-shrink: 0;
+  min-height: 200px;
+
+  &--header {
+    display: none;
+  }
+}
+
+@media (min-width: $miniDesktopWidth) {
+  .price-list__item {
+    flex-wrap: nowrap;
+    min-height: 0;
+    border-radius: 0;
+    align-items: center;
+    width: auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 0;
+      height: 1px;
+      background-color: #EAEAEA;
+    }
+
+    &--header {
+      display: flex;
+      background-color: transparent;
+
+      color: #7E7E82;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+.price-list__cell {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  width: 100%;
+
+
+
+ 
+}
+
+@media (min-width: $miniDesktopWidth) {
+  .price-list__cell {
+    display: block;
+    margin-bottom: 0;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-left: 5px;
+
+    &:nth-child(1) {
+      width: 54%;
+      padding-left: 0;
+      flex-grow: 1;
+    }
+
+    &:nth-child(2) {
+      width: 14%;
+    }
+
+    &:nth-child(3) {
+      width: 14%;
+    }
+
+    &:nth-child(4) {
+      width: 124px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $miniDesktopWidth) {
+  .price-list__pagination {
+    display: none;
+  }
+}
+
+@media (min-width: $miniDesktopWidth) {
+  .price-list__btn {
+    min-width: 119px;
+  }
+}

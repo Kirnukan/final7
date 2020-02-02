@@ -1,0 +1,137 @@
+.slider-section{
+    border-top: 1px solid #D9FFF5;
+    font-family: 'TTLakes';
+    display: flex;
+    flex-direction: column;
+    min-height: 234px;
+    max-width: 100%;
+    width: 100%;
+    background-color: #F8F8F8;
+    overflow: hidden;
+}
+.slider-section__header{
+    margin: 0;
+    font-size: 16px;
+    color: #7E7E82;
+    padding: 16px;
+    background: linear-gradient(90deg,#F8F8F8 1.39%, #FFFFFF 100%);
+}
+.brands{
+    padding-top: 16px;
+    box-sizing: border-box;
+    min-height: 154px;
+    height: 100%;
+
+    &__list{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__item{
+        display: flex;
+        min-width: 240px;
+        height: 72px;
+        background-color: white;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    &__logo{
+        display: flex;
+        padding-left: 16px;
+        align-items: center;
+    }
+    
+
+}
+
+
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: .3s opacity;
+    z-index: 10;
+    padding-top: 16px;
+    display: flex;
+    line-height: 12px;
+    flex-direction: row;
+    margin: 0 10%;
+}
+
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    display: flex;
+    border-radius: 100%;
+    background: black;
+    opacity: .2;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+  }
+
+  @media (min-width: $miniDesktopWidth){
+    .slider-section{
+     
+        max-height: 322px;
+        height: 322px;
+        overflow: visible;
+        position: relative;
+        &--active{
+        max-height: 490px;
+        height: 490px;
+    }
+    }
+    
+
+    .brands{
+        height: 200px;
+
+        &__list{
+            height: 200px;
+            flex-wrap: wrap;
+            overflow: visible;
+            margin-left: 16px;
+        }
+        &__item{
+            box-sizing: border-box;
+            border: 1px solid #EAEAEA;
+            border-radius: 6px;
+                
+            min-width: 224px;
+            max-width: 100%;
+            width: 31.1%;
+            margin-right: 16px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .none{
+        display: none;
+    }
+
+
+    .swiper-pagination{
+        display: none;
+    }
+}
+@media (min-width: 1120px){
+    .slider-wrapper{
+        max-width: 1120px;
+        margin: auto;
+    }
+
+    .slider-section--active{
+        max-height: 400px;
+        height: 400px;
+    }
+    .brands__item{
+        width: 23.5%;
+        
+    }
+
+}

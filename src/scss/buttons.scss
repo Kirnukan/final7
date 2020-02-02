@@ -1,0 +1,306 @@
+
+.circle-btn{
+  overflow: hidden;
+  display: flex;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #FF3E79;
+  flex-grow: 0;
+  flex-shrink: 0;
+  outline: none;
+  border: none;   
+  &--close{
+    display: none;
+  }
+  &--search{
+    background-image: url(../img/icons/search.svg);
+    margin-left: 0px;
+  }
+  &--phone{
+    background-image: url(../img/icons/phone.svg);
+  }
+  &--chat{
+    background-image: url(../img/icons/chat.svg);
+  }
+  &--profile{
+    background-image: url(../img/icons/profile.svg);
+  }
+  
+  &:hover{
+    cursor: pointer;
+    filter: $btn-effect;
+    transition: $btn-effect-duration;
+  }
+  &:focus{
+    filter: $btn-effect;
+    transition: $btn-effect-duration;
+  }
+}
+@media (max-width: $desktop){
+  .circle-btn--close{
+    background-image: url(../img/icons/close.svg);
+  }
+}
+.btn {
+  &--classic {
+    display: flex;
+    align-items: center;
+    background: #FF3E79;
+    border-radius: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 8px 10px;
+    position: relative;
+    padding-right: 25px;
+    width: 119px;
+    align-self: flex-end;
+    &::after {
+      content: '';
+      width: 7px;
+      height: 10px;
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      transform: translateY(-50%);
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-position: center;
+      vertical-align: middle;
+      background-image: url(../img/icons/dropdown.svg);
+
+    }
+    &:hover,
+    &:focus{
+      cursor: pointer;
+
+        filter: $btn-effect;
+        transition: $btn-effect-duration;
+      }
+    }
+  }
+.main-header__btn{
+    margin-right: 35px;
+    margin-left: 35px;
+    &:hover,
+    &:focus{
+      cursor: pointer;
+      &::after{
+        filter: $btn-effect;
+        transition: $btn-effect-duration;
+      }
+    }
+    &--request{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      &::after{
+        margin-left: 8px;
+        margin-right: -28px;
+        display: flex;
+        content: url(../img/icons/group.svg);
+        padding-top: 5px;
+        width: 40px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF3E79;
+        border-radius: 50%;  
+      }
+    }
+  
+    &--repair{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      &::after{
+        margin-left: 8px;
+        margin-right: -15px;
+        display: flex;
+        content: url(../img/icons/icon.svg);
+        padding-top: 5px;
+        width: 40px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: #FF3E79;
+        border-radius: 50%;  
+      }
+    }
+   
+  }
+  @media (max-width: $miniDesktopWidth){
+      .main-header__btn{
+        margin-top: 16px;
+      }
+  }
+  @media (max-width: $desktop){
+    .open-nav-btn::after{
+      display: flex;
+      content: url(../img/icons/staircase.svg);
+      padding-top: 2px;
+      width: 40px;
+      height: 35px;
+      justify-content: center;
+      align-items: center;
+      background-color: #FF3E79;
+      border-radius: 50%;  
+    }
+    .main-header__btn{
+      margin-left: 0;
+    }
+  }
+  .main__footer-link{
+    text-decoration: none;
+    color: black;
+    &:active{
+      color: #000000;
+    }
+    &:hover,
+    &:focus{
+      filter: $btn-effect;
+      transition: $btn-effect-duration;
+      
+    }
+    &::after{
+      content: '';
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: inline-block;
+      transform: translate(8px, 7px);
+      background-image: url(../img/icons/pink-arrow.svg);
+  
+  
+    }
+  }
+.slider__btn{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    background-image: url(../img/icons/go.svg);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    &:hover{
+        background-color: rgb(241, 217, 224);
+        filter: $btn-effect;
+        transition: $btn-effect-duration;
+    }
+}
+.read-next__btn{
+    font-family: inherit;
+    display: flex;
+    flex-wrap: nowrap;
+    color: #1B1C21;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-top: 16px;
+    width: 151px;
+    height: 24px;
+    
+    font-size: 16px;
+    &--rotate{
+      &::before{
+      transform: rotate(180deg) translateX(17px);
+      }
+      }  
+     &::before{
+        content: "";
+        height: 10px;
+        width: 10px;
+        background-image: url(../img/icons/next.svg);
+        background-repeat: no-repeat;
+        padding-right: 17px;
+        
+        margin-top: 3px;
+    }
+      
+    &:hover,
+    &:focus{
+        cursor: pointer;
+        &::before{
+            
+        transition: 1s;
+        filter: hue-rotate(180deg);
+        }
+    
+    }
+    
+  }
+
+  .slider-section__btn{
+    font-family: inherit;
+    display: flex;
+    flex-wrap: nowrap;
+    color: #1B1C21;
+    background-color: transparent;
+    display: none;
+    border: none;
+    margin-top: 16px;
+    width: 151px;
+    height: 24px;
+    margin-left: 16px;
+    &::before{
+        content: "";
+        height: 10px;
+        width: 10px;
+        background-image: url(../img/icons/next.svg);
+        background-repeat: no-repeat;
+        padding-right: 17px;
+        
+        margin-top: 3px;
+    }
+    &:hover,
+    &:focus{
+        &::before{
+        transition: 1s;
+        filter: hue-rotate(180deg);
+        }
+    
+    }
+}
+
+  @media (min-width: $miniDesktopWidth){
+    .slider-section__btn{
+        display: flex;
+        position: absolute;
+        bottom: 34px;
+        cursor: pointer;
+        outline: none;
+        
+    &--rotate::before{
+      transform: rotate(180deg) translateX(17px);
+
+  }      
+    }
+
+    .slider-section__btn-type{
+      bottom: 0;
+      transform: translateY(34px);
+      margin-left: 0;
+      &--rotate::before{
+        transform: rotate(180deg) translateX(17px);
+  
+    }  
+    }
+  }
+
+  @media (max-width: $desktop){
+    .circle-btn--close{
+        display: flex;
+    }
+
+  }

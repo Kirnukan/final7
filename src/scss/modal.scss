@@ -1,0 +1,62 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    overflow: auto;
+  
+  
+    &--contacts-closed,
+    &--call-closed {
+      transform: translateX(100%);
+      box-shadow: none;
+  
+      .modal__btn {
+        right: 0;
+      }
+    }
+  }
+  .modal__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    margin-left: -16px;
+    margin-right: 0;
+  }
+  .modal__btn {
+    margin-bottom: 32px;
+    transition: left 1s;
+  }
+@media (min-width: $miniDesktopWidth){
+    .modal {
+        width: 440px;
+        overflow: visible;
+        padding: 0;
+        border-left: 1px solid #D9FFF5;
+      }
+      .modal__content {
+        overflow: auto;
+        padding: 40px 32px;
+      }
+      .modal__title {
+        margin-left: -32px;
+      }
+      .modal__btn {
+        position: absolute;
+        top: 32px;
+        transform: translateX(-100px);
+      }
+}
+@media (max-width: $miniDesktopWidth){
+    .modal{
+        width: 320px;
+    }
+}
