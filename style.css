@@ -201,7 +201,7 @@ body {
 .text {
   font-size: 14px;
   margin-bottom: 16px;
-  width: 300px; }
+  width: 290px; }
 
 .main-header {
   margin-top: 20px;
@@ -393,6 +393,9 @@ main {
 
 .swiper-pagination-bullet-active {
   background-color: #B5B6BC; }
+
+.none {
+  display: none; }
 
 @media (min-width: 768px) {
   .slider-section {
