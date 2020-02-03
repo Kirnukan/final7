@@ -335,7 +335,9 @@ main {
 
 @media (min-width: 768px) {
   .info-section {
-    flex-direction: row; } }
+    flex-direction: row; }
+  .menu-list {
+    overflow: auto; } }
 
 @media (min-width: 1440px) {
   .full-page {
