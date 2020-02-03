@@ -643,7 +643,6 @@ main {
   font-size: 12px;
   line-height: 16px;
   text-align: left;
-  letter-spacing: -0.15px;
   text-transform: uppercase;
   color: #FFFFFF;
   font-weight: bold;
@@ -653,7 +652,8 @@ main {
   width: 119px;
   align-self: flex-end;
   font-family: 'TTLakes', Arial, Helvetica, sans-serif;
-  font-weight: 900; }
+  font-weight: 900;
+  border: none; }
   .btn--submit::after {
     content: '';
     width: 7px;
