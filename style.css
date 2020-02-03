@@ -598,6 +598,16 @@ main {
   .price-list__btn {
     min-width: 119px; } }
 
+@media (min-width: 768px) {
+  .price-list__item:not(:first-child):not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 0;
+    height: 1px;
+    background-color: #EAEAEA; } }
+
 .circle-btn {
   overflow: hidden;
   display: flex;
