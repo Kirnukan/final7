@@ -12,7 +12,14 @@
     height: 100vh;
     z-index: 10000;
     overflow: auto;
-  
+    font-family: 'TTLakes', Arial, Helvetica, sans-serif;
+    &-form__description{
+      font-size: 14px;
+      width: 376px;
+    }
+    &-form__link{
+      color: $mainColor;
+    }
   
     &--contacts-closed,
     &--call-closed {
@@ -24,39 +31,83 @@
       }
     }
   }
-  .modal__title {
+  .modal__header {
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 24px;
     margin-left: -16px;
     margin-right: 0;
+    font-size: 28px;
+    font-weight: 900;
+    &::before{
+      content: "";
+      border-left: 3px solid #41F6D7;
+      padding-right: 28px;
+    }
   }
   .modal__btn {
     margin-bottom: 32px;
     transition: left 1s;
+    
   }
+  .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  
+  .field__text-item {
+    display: none;
+  }
+  
+  .field__input,
+  .field__textarea {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px 16px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    display: block;
+    resize: vertical;
+    overflow: auto;
+    font-family: 'TTLakes', Arial, Helvetica, sans-serif;
+    &::placeholder {
+      color: #B5B6BC;
+    }
+  }
+  
 @media (min-width: $miniDesktopWidth){
-    .modal {
-        width: 440px;
-        overflow: visible;
-        padding: 0;
-        border-left: 1px solid #D9FFF5;
-      }
+
       .modal__content {
         overflow: auto;
         padding: 40px 32px;
       }
-      .modal__title {
+      .modal__header {
         margin-left: -32px;
       }
       .modal__btn {
         position: absolute;
         top: 32px;
-        transform: translateX(-100px);
+        transform: translateX(-80px);
       }
 }
 @media (max-width: $miniDesktopWidth){
     .modal{
-        width: 320px;
+        width: 287px;
+        &-form__description{
+          width: 288px;
+        }
     }
 }
+@media (min-width: $miniDesktopWidth){
+  .modal {
+      width: 440px;
+      overflow: visible;
+      padding: 0;
+      border-left: 1px solid #D9FFF5;
+      
+    }
+  }

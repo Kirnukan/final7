@@ -65,36 +65,22 @@
         display: none;
       }
     }
-
-    &:nth-child(2) {
-      border-top-left-radius: 6px;
-      border-top-right-radius: 6px;
-    }
-
-    &:last-child {
-      border-bottom-left-radius: 6px;
-      border-bottom-right-radius: 6px;
-
       &::before {
         display: none;
       }
     }
   }
-}
 
-.price-list__cell {
+.price-list__span {
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
   width: 100%;
-
-
-
  
 }
 
 @media (min-width: $miniDesktopWidth) {
-  .price-list__cell {
+  .price-list__span {
     display: block;
     margin-bottom: 0;
     width: 100%;
@@ -136,4 +122,19 @@
   .price-list__btn {
     min-width: 119px;
   }
+}
+@media (min-width: 768px){
+.price-list__item{
+  &:not(:first-child){
+  &:not(:last-child){
+  &::after {
+    content: '';
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 0;
+    height: 1px;
+    background-color: #EAEAEA;
+}}
+}}
 }

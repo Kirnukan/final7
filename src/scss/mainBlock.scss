@@ -45,7 +45,7 @@
   .text{
     font-size: 14px;
     margin-bottom: 16px;
-    width: 300px;
+    width: 290px;
   }
   .main-header{
     margin-top: 20px;
@@ -84,15 +84,32 @@
       display: none;
       
     }
+    .main-header__item{
+      transform: translateY(-15px);
+      &:nth-of-type(2){
+        transform: translateY(-20px);
+      }
+
+    }
+    .main-header__item--chat{
+      margin-top: 6px;
+    }
     .hidden-header__menu{
       display: flex;
       margin-top: 16px;
-      
     }
     .main-header__link{
       display: none;
     }
-
+    .hidden-header{
+      position: fixed;
+      width: 100vw;
+      z-index: 100;
+      border-bottom: 1px solid #D9FFF5;
+      background: #FFFFFF;
+      top: 0;
+      
+    }
   }
   @media (min-width: $desktop){
 
@@ -186,6 +203,9 @@
   @media (min-width: $miniDesktopWidth){
     .info-section{
       flex-direction: row;
+    }
+    .menu-list{
+      overflow: auto;
     }
 
   }
