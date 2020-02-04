@@ -996,7 +996,7 @@ main {
   flex-direction: column;
   margin-bottom: 16px; }
 
-.field__label-text {
+.field__text-item {
   display: none; }
 
 .field__input,
