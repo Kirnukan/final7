@@ -6,7 +6,6 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  background-color:$mainColor;
   flex-grow: 0;
   flex-shrink: 0;
   outline: none;
@@ -44,8 +43,9 @@
   }
 }
 .btn {
+  display: flex;
   &--submit {
-    display: flex;
+    
     align-items: center;
     background:$mainColor;
     border-radius: 16px;
@@ -58,7 +58,7 @@
     padding: 8px 10px;
     position: relative;
     padding-right: 25px;
-    width: 119px;
+    width: 120px;
     align-self: flex-end;
     font-family: 'TTLakes', Arial, Helvetica, sans-serif;
     font-weight: 900;
@@ -103,13 +103,15 @@
       flex-direction: row;
       align-items: center;
       &::after{
+        content: "";
         margin-left: 8px;
         margin-right: -28px;
         display: flex;
-        content: url(../img/icons/group.svg);
-        padding-top: 5px;
+        background-image: url(../img/icons/group.svg);
+        background-repeat: no-repeat;
+        background-position: center;
         width: 40px;
-        height: 35px;
+        height: 40px;
         justify-content: center;
         align-items: center;
         background-color:$mainColor;
@@ -122,13 +124,15 @@
       flex-direction: row;
       align-items: center;
       &::after{
+        content: "";
         margin-left: 8px;
         margin-right: -15px;
         display: flex;
-        content: url(../img/icons/icon.svg);
-        padding-top: 5px;
+        background-image: url(../img/icons/icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
         width: 40px;
-        height: 35px;
+        height: 40px;
         justify-content: center;
         align-items: center;
         
@@ -190,7 +194,6 @@
       content: '';
       width: 10px;
       height: 10px;
-      position: absolute;
       background-repeat: no-repeat;
       background-position: center;
       display: inline-block;
