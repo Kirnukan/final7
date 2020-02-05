@@ -90,9 +90,11 @@ swiperBtn.addEventListener('click', function(){
   }
   if(!swiperBtn.classList.contains('slider-section__btn-brand--rotate')){
     swiperBtn.classList.add('slider-section__btn--rotate');
+    swiperBtn.classList.add('slider-section__btn-brand--rotate');
     swiperBtn.innerText = "Скрыть";
   } else {
     swiperBtn.classList.remove('slider-section__btn--rotate');
+    swiperBtn.classList.remove('slider-section__btn-brand--rotate');
     swiperBtn.innerText = "Показать все";
   }
 

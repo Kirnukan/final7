@@ -1,38 +1,4 @@
 
-@font-face {
-    font-family: 'TTLakes';
-    src: url('../fonts/TTLakes-Medium.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'TTLakes';
-    src: url('../fonts/TTLakes-Bold.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-  }
-  .body{
-    background-color: #F8F8F8;
-    &:before {
-      content: '';
-      transition: background-color 0.5s ease;
-    }
-  
-    &--overlay {
-      overflow: hidden;
-  
-      &:before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-color: rgba(255, 255, 255, 0.85);
-        z-index: 9999;
-      }
-    }
-  }
   .full-page{
     font-family: "TTLakes", sans-serif;
     background-color: #F8F8F8;
@@ -166,11 +132,6 @@
           background-color:#FFFFFF ;
       }
     }
-  }
-  main{
-    display: flex;
-    flex-direction: column;  
-
   }
   .info-section{
     display: flex;
