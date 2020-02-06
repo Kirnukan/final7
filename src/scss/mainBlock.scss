@@ -42,6 +42,9 @@
     flex-grow: 1;
   }
   @media (max-width: $desktop){
+    .main-header{
+      margin-top: 100px;
+    }
     .main-header__menu{
       display: none;
       
@@ -73,14 +76,7 @@
       
     }
   }
-  @media (min-width: $desktop){
 
-    .hidden-header__menu{
-      display: none;
-    }
-
-
-  }
 
   .nav-slider{
     overflow: hidden;
@@ -198,6 +194,9 @@
     }
   }
   @media (min-width: $desktop){
+    .hidden-header{
+      display: none;
+    }
     .full-page{
       max-width: $desktop;
       flex-direction: row;

@@ -92,24 +92,15 @@
     display: flex;
     padding: 0;
 }
-.nav-footer__menu--hidden-left{
-    position: absolute;
-    display: flex;
-    left: 10px;
-}
+
 .nav-footer__menu--hidden{
     margin-top: 24px;
+    display: flex;
+
     
 }
 
-@media (max-width: $miniDesktopWidth){
-    .nav-footer__menu--hidden{
-      display: none;
-    }
-  }
-  .nav-footer__menu--hidden-left{
-      display: flex;
-  }
+
 .nav-footer__contacts{
     display: flex;
     flex-direction: column;

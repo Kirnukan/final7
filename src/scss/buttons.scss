@@ -340,6 +340,7 @@
     .circle-btn--close{
         display: flex;
     }
+    
   }
   @media (max-width: $miniDesktopWidth){
     .main-header__btn--repair{
@@ -350,4 +351,7 @@
       margin-top: 20px;
     }
   }
-  
+  .hidden-header__btn{
+    margin-top: 0;
+
+  }
