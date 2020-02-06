@@ -158,14 +158,15 @@
     .main-header__btn--request{
 
       margin-top: 8px;
-      &:before {
-        content: '';
+
+    }
+    .wall{
+        display: flex;
         width: 2px;
         height: 32px;
-        margin-right: 19px;
+        margin-right: 16px;
         background-color: #eaeaea;
         border-radius: 1px;
-    }
     }
     .open-nav-btn{
       background-image: url(../img/icons/staircase.svg);
@@ -309,7 +310,22 @@
 .main-header__item--logo{
   margin-left: -16px;
 }
+.open-nav-btn--hidden{
+  margin-left: 10px;
+}
   @media (min-width: $miniDesktopWidth){
+    .open-nav-btn--hidden{
+      &::after{
+        content: "";
+        margin-left: 16px;
+        margin-right: 8px;
+        width: 2px;
+        height: 32px;
+        background-color: #eaeaea;
+        border-radius: 1px;
+        margin-top: 5px;
+      }
+    }
     .slider-section__btn{
         display: flex;
         position: absolute;
@@ -328,7 +344,7 @@
     .slider-section__btn-type{
       bottom: 0;
       transform: translateY(34px);
-      margin-left: 0;
+      margin-left: 16px;
       &--rotate::before{
         transform: rotate(180deg) translateX(17px);
   
