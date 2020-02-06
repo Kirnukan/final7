@@ -75,35 +75,33 @@
     <div class="main-section">
       <header>
         <div class="hidden-header">
-            <div class="main-header__menu hidden-header__menu">     
-                <ul class="nav-footer__menu nav-footer__menu--hidden nav-footer__menu--hidden-left">
-                    <li class="nav-footer__item main-header__item">
+                <ul class="nav-footer__menu nav-footer__menu--hidden">
+                    <li class="nav-footer__item main-header__item main-header__item--nav open-nav-btn--hidden">
                         <button class="open-nav-btn circle-btn"></button>
                     </li>
                     <li class="nav-footer__item main-header__item main-header__item--logo">
-                        <a href="#" class="nav-header__logo">
+                        <a href="#" class="nav-header__logo nav-header__logo--mobile">
                             <img src="img/cps.svg" alt="Logo CPS" class="logo">
                         </a>
                     </li>
-                </ul>
-                <ul class="nav-footer__menu nav-footer__menu--hidden">
-                    <li class="nav-footer__item main-header__item">
+
+                    <li class="nav-footer__item main-header__item main-header__item--mobile">
                         <button class="nav-footer__btn circle-btn circle-btn--phone circle-btn--phone-modal"></button>
                     </li>
-                    <li class="nav-footer__item main-header__item main-header__item--chat">
+                    <li class="nav-footer__item main-header__item main-header__item--mobile">
                         <button class="nav-footer__btn circle-btn circle-btn--chat circle-btn--chat-modal"></button>
                     </li>
-                    <li class="nav-footer__item main-header__item">
+                    <li class="nav-footer__item main-header__item main-header__item--mobile">
                         <button class="nav-footer__btn circle-btn circle-btn--profile"></button>
                     </li>
-                </ul>
-                <div class="main-header__btn main-header__btn--request circle-btn main-header__item">
+                
+                <li class="main-header__btn main-header__btn--request hidden-header__btn circle-btn main-header__item">
+                    <a class="main-header__link wall" href="#"></a>
+                </li>
+                <li class="main-header__btn main-header__btn--repair hidden-header__btn circle-btn main-header__item">
                     <a class="main-header__link" href="#"></a>
-                </div>
-                <div class="main-header__btn main-header__btn--repair circle-btn main-header__item">
-                    <a class="main-header__link" href="#"></a>
-                </div>
-            </div>
+                </li>
+              </ul>
           </div>
         <div class="main-header">
             <h1 class="main-header__header">Услуги и сервисы</h1>
@@ -195,7 +193,7 @@
       </div>
   </section>
   <section class="slider-section slider-section--brand">
-      <h2 class="slider-section__header">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
+      <h2 class="section-header">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
       <div class="slider-section__brands brands swiper swiper-container">
           <ul class="brands__list swiper-wrapper">
               <li class="brands__item swiper-slide">
@@ -256,7 +254,7 @@
       
       </section></div></section>        
             <section class="slider-section slider-section--type">
-                <h2 class="slider-section__header slider-section__header--type">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
+                <h2 class="section-header section-header--type">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
                 <div class="slider-section__type-list swiper-slider">
                     <ul class="type-list swiper-wrapper">
                       <li class="type-list__item swiper-slide">
@@ -301,7 +299,7 @@
                   <button class="slider-section__btn slider-section__btn-type" type="button">Показать все</button>
             </section>
             <section class="slider-section slider-section--price">
-                <h2 class="slider-section__header">ЦЕНЫ НА УСЛУГИ</h2>
+                <h2 class="section-header">ЦЕНЫ НА УСЛУГИ</h2>
                 <div class="slider-section__price-list price-list swiper-slider">
                     <ul class="price-list__list swiper-wrapper">
                       <li class="price-list__item price-list__item--header">
