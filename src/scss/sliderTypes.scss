@@ -3,7 +3,6 @@
 }
 .slider-section--type{
   margin-bottom: 52px;
-  margin-left: 16px;
 
 }
 .type-list {
@@ -11,13 +10,12 @@
   overflow: visible;
   padding-left: 0px;
 }
-.slider-section__header{
-  width: 96%;
-}
 @media (min-width: $miniDesktopWidth) {
   .type-list {
     flex-wrap: wrap;
     align-content: flex-start;
+    height: 100%;
+    margin-left: 16px;
   }
   .slider-section--type{
     max-height: 240px;

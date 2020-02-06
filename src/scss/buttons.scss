@@ -1,7 +1,6 @@
 
 .circle-btn{
-  overflow: hidden;
-  display: flex;
+
   background-repeat: no-repeat;
   border-radius: 50%;
   width: 40px;
@@ -40,6 +39,11 @@
 @media (max-width: $desktop){
   .circle-btn--close{
     background-image: url(../img/icons/close.svg);
+  }
+}
+@media (max-width: $desktop){
+  .circle-btn--search{
+    margin-right: 16px;
   }
 }
 .btn {
@@ -163,12 +167,12 @@
         border-radius: 1px;
     }
     }
-    .open-nav-btn::after{
-      display: flex;
-      content: url(../img/icons/staircase.svg);
-      padding-top: 2px;
+    .open-nav-btn{
+      background-image: url(../img/icons/staircase.svg);
+      background-position: center;
+      background-repeat: no-repeat;
       width: 40px;
-      height: 35px;
+      height: 40px;
       justify-content: center;
       align-items: center;
       background-color:$mainColor;

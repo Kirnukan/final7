@@ -42,15 +42,12 @@ let swiperValues = {
     
 };
 if(window.innerWidth < miniDesktopWidth){
-  let menuList;
-  let brandList;
-let typeList;
-let priceList;
+
  
- brandList =  new Swiper('.slider-section__brands', swiperValues);
- typeList =  new Swiper('.slider-section__type-list', swiperValues);
- priceList =  new Swiper('.slider-section__price-list', swiperValues);
- menuList =  new Swiper('.menu', swiperValues);
+let brandList =  new Swiper('.slider-section__brands', swiperValues);
+let typeList =  new Swiper('.slider-section__type-list', swiperValues);
+let priceList =  new Swiper('.slider-section__price-list', swiperValues);
+let menuList =  new Swiper('.menu', swiperValues);
 
 }
 
