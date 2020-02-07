@@ -1064,9 +1064,9 @@
 
 @media (max-width: 768px) {
   .modal {
-    width: 287px; }
+    width: 320px; }
     .modal-form__description {
-      width: 288px; } }
+      width: 300px; } }
 
 @media (min-width: 768px) {
   .modal {
