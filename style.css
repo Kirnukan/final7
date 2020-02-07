@@ -546,14 +546,6 @@
     align-items: center;
     width: auto;
     position: relative; }
-    .price-list__item::before {
-      content: "";
-      position: absolute;
-      left: 16px;
-      right: 16px;
-      bottom: 0;
-      height: 1px;
-      background-color: #EAEAEA; }
     .price-list__item--header {
       display: flex;
       background-color: transparent;
@@ -581,15 +573,15 @@
     flex-shrink: 0;
     padding-left: 5px; }
     .price-list__span:nth-child(1) {
-      width: 54%;
+      width: 50%;
       padding-left: 0;
       flex-grow: 1; }
     .price-list__span:nth-child(2) {
-      width: 14%; }
+      width: 15%; }
     .price-list__span:nth-child(3) {
-      width: 14%; }
-    .price-list__span:nth-child(4) {
-      width: 124px; }
+      width: 15%; }
+    .price-list__span:last-child {
+      width: 120px; }
     .price-list__span::before {
       display: none; } }
 
