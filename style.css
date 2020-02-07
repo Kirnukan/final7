@@ -599,7 +599,7 @@
 
 @media (min-width: 768px) {
   .price-list__btn {
-    min-width: 119px; } }
+    min-width: 120px; } }
 
 @media (min-width: 768px) {
   .price-list__item:not(:first-child):not(:last-child)::after {
