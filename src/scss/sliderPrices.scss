@@ -41,16 +41,6 @@
     width: auto;
     position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      left: 16px;
-      right: 16px;
-      bottom: 0;
-      height: 1px;
-      background-color: #EAEAEA;
-    }
-
     &--header {
       display: flex;
       background-color: transparent;
@@ -89,21 +79,21 @@
     padding-left: 5px;
     
     &:nth-child(1) {
-      width: 54%;
+      width: 50%;
       padding-left: 0;
       flex-grow: 1;
     }
 
     &:nth-child(2) {
-      width: 14%;
+      width: 15%;
     }
 
     &:nth-child(3) {
-      width: 14%;
+      width: 15%;
     }
 
-    &:nth-child(4) {
-      width: 124px;
+    &:last-child {
+      width: 120px;
     }
 
     &::before {
