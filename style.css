@@ -461,6 +461,8 @@
     display: none; } }
 
 @media (min-width: 1440px) {
+  .swiper-slide--desktop {
+    display: flex; }
   .slider-section--active {
     max-height: 400px;
     height: 400px; }
