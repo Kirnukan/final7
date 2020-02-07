@@ -67,7 +67,7 @@ module.exports = {
   plugins: [
     // Подключаем файл html, стили и скрипты встроятся автоматически
     new HtmlWebpackPlugin({
-      title: 'Webpack 4 Starter',
+      title: 'Final Block',
       template: './src/index.html',
       inject: true,
       minify: {

@@ -1,13 +1,11 @@
 import '../scss/style.scss';
 
-const mobileWidth = 320;
 const miniDesktopWidth = 768;
-const desktopWidth = 1440;
 
 //var swiperList = document.querySelector('.swiper-container').swiper;
-let slidesCountFunction = function(count){
-  let slides = document.querySelectorAll('.brands__item'); 
-  for(let i = 6; i <= slides.length-count; ++i){
+let slidesCountFunction = function(startNumber, name, count){
+  let slides = document.querySelectorAll(name); 
+  for(let i = startNumber; i <= slides.length-count; ++i){
     if(slides[i].classList.contains('none')){
       slides[i].classList.remove('none');
     } else {
@@ -16,18 +14,8 @@ let slidesCountFunction = function(count){
 
   }
 }
-let slidesCountFunctionType = function(count){
-  let slides = document.querySelectorAll('.type-list__item'); 
-  for(let i = 3; i <= slides.length-count; ++i){
-    if(slides[i].classList.contains('none')){
-      slides[i].classList.remove('none');
-    } else {
-      slides[i].classList.add('none');
-    }
-
-  }
-}
-
+slidesCountFunction(6, '.brands__item');
+slidesCountFunction(3, '.type-list__item');
 let swiperValues = {
   
     slidesPerView: 'auto',
@@ -42,36 +30,11 @@ let swiperValues = {
     
 };
 if(window.innerWidth < miniDesktopWidth){
-
- 
 let brandList =  new Swiper('.slider-section__brands', swiperValues);
 let typeList =  new Swiper('.slider-section__type-list', swiperValues);
 let priceList =  new Swiper('.slider-section__price-list', swiperValues);
 let menuList =  new Swiper('.menu', swiperValues);
-
 }
-
-
-
-
-
-let desktopResize = function(){
-if (window.innerWidth >= desktopWidth) {
-  slidesCountFunction(4);
-} else if(window.innerWidth < desktopWidth){
-  slidesCountFunction(6);
-}
-}
-let desktopResizeType = function(){
-  if (window.innerWidth >= desktopWidth) {
-    slidesCountFunctionType(5);
-  } else if(window.innerWidth < desktopWidth){
-    slidesCountFunctionType(6);
-  }
-  }
-desktopResize();
-window.addEventListener('resize', desktopResize);
-window.addEventListener('resize', desktopResizeType);
 
 let swiperBtn = document.querySelector('.slider-section__btn');
 let swiperBtnType = document.querySelector('.slider-section__btn-type');
@@ -95,7 +58,7 @@ swiperBtn.addEventListener('click', function(){
     swiperBtn.innerText = "Показать все";
   }
 
-  slidesCountFunction(0);
+  slidesCountFunction(6, '.brands__item', 0);
 
 });
 swiperBtnType.addEventListener('click', function(){
@@ -115,7 +78,7 @@ swiperBtnType.addEventListener('click', function(){
     swiperBtnType.innerText = "Показать все";
   }
 
-  slidesCountFunctionType(0);
+  slidesCountFunction(3, '.type-list__item', 0);
 
 });
   let readNextBtn = document.querySelector('.read-next__btn');
