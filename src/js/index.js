@@ -148,7 +148,7 @@ swiperBtnType.addEventListener('click', function(){
   let modalBtnCallModal = document.querySelector('.circle-btn--chat-modal');
   let modalContacts = document.querySelector('.modal--contacts');
   let modalCall = document.querySelector('.modal--call');
-  let body = document.querySelector('body');
+  let body = document.querySelector('.hidden-overlay');
   let bodyOverlay = document.querySelector('.body--overlay');
   
   let navList = document.querySelector('.nav');
@@ -234,10 +234,17 @@ openNavBtn.addEventListener('click', function(){
   
 
   
-    bodyOverlay.addEventListener('click', function(){
+    body.addEventListener('click', function(){
       if (body.classList.contains('body--overlay')) {
-        body.classList.remove('body--overlay');
+        body.classList.remove('body--overlay');     
+      }
+      if (!modalCall.classList.contains('modal--call-closed')) {
         modalCall.classList.add('modal--call-closed');
+      }
+      if (!modalContacts.classList.contains('modal--contacts-closed')) {
         modalContacts.classList.add('modal--contacts-closed');
+      }
+      if (!navList.classList.contains('nav--hidden')) {
+        navList.classList.add('nav--hidden');
       }
     });
