@@ -53,17 +53,6 @@
   transition: .5s;
   z-index: 10000;
   border-right: 1px solid #D9FFF5; }
-  .nav-overlay {
-    overflow: hidden; }
-    .nav-overlay:before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background-color: rgba(255, 255, 255, 0.85);
-      z-index: 999; }
 
 .logo:hover,
 .logo:focus {
@@ -165,7 +154,8 @@
     min-width: 320px;
     height: 100vh;
     max-height: 100vh;
-    flex-direction: column; }
+    flex-direction: column;
+    z-index: 1000; }
   .nav--hidden {
     display: flex; } }
 
