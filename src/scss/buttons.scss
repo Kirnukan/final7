@@ -186,6 +186,7 @@
   .main__footer-link{
     text-decoration: none;
     color: black;
+    display: inline;
     &:active{
       color: #000000;
     }
@@ -195,18 +196,11 @@
       transition: $btn-effect-duration;
       
     }
-    &::after{
-      content: '';
-      width: 10px;
-      height: 10px;
-      background-repeat: no-repeat;
-      background-position: center;
-      display: inline-block;
-      transform: translate(8px, 7px);
-      background-image: url(../img/icons/pink-arrow.svg);
-  
-  
-    }
+
+  }
+  .pink-arrow{
+    margin-left: 16px;
+    vertical-align: middle;
   }
   .modal__btn{
     background-image: url(../img/icons/close.svg);

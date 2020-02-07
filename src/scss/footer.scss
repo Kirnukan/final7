@@ -3,18 +3,21 @@
   border-top: 1px solid #D9FFF5;
   text-align: center;
 }
+.main__footer-p{
+  width: 85%;
+}
 @media (min-width: $desktop) {
 .full-footer{
-  margin-top: 100px;
   margin-left: 16px;
-  width: 94%;
 }
-}
-.main__footer-p{
-  width: 45%;
-  font-size: 14px;
+
+
 }
 @media (min-width: $miniDesktopWidth) {
+  .main__footer-p{
+    width: 45%;
+    font-size: 14px;
+  }
   .footer {
     display: flex;
     justify-content: space-between;
@@ -40,7 +43,6 @@
 @media (min-width: $miniDesktopWidth) {
   .footer {
     border-top: 1px solid #D9FFF5;
-    width: 93%;
     padding: 32px;
     padding-bottom: 24px;
     font-size: 14px;
@@ -83,4 +85,7 @@
     text-align: right;
   }
 
+}
+.full-footer{
+  margin-top: 36px;
 }

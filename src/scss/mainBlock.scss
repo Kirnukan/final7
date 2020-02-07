@@ -169,7 +169,9 @@
     margin-right: 26px;
   }
   @media (min-width: $miniDesktopWidth){
-
+    .cps{
+      max-height: 280px;
+    }
     .main-header__item--logo{
       margin-right: 35%; 
      }

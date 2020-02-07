@@ -173,12 +173,26 @@ openNavBtn.addEventListener('click', function(){
   modalBtnContacts.addEventListener('click', function(){
     if (modalContacts.classList.contains('modal--contacts-closed')) {
       body.classList.add('body--overlay');
-    modalContacts.classList.remove('modal--contacts-closed');
+      modalContacts.classList.remove('modal--contacts-closed');
+      if (!modalCall.classList.contains('modal--call-closed')) {
+        modalCall.classList.add('modal--call-closed');
+      }
+      if (!navList.classList.contains('nav--hidden')) {
+        navList.classList.add('nav--hidden');
+        body.classList.remove('nav-overlay');
+      }
   }
   });
   modalBtnCall.addEventListener('click', function(){
     if (modalCall.classList.contains('modal--call-closed')) {
       modalCall.classList.remove('modal--call-closed');
+      if (!modalContacts.classList.contains('modal--contacts-closed')) {
+        modalContacts.classList.add('modal--contacts-closed');
+      }
+      if (!navList.classList.contains('nav--hidden')) {
+        navList.classList.add('nav--hidden');
+        body.classList.remove('nav-overlay');
+      }
   }
   if (!body.classList.contains('body--overlay')) {
     body.classList.add('body--overlay');
