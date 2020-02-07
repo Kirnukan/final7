@@ -51,7 +51,7 @@
   font-size: 16px;
   color: #1B1C21;
   transition: .5s;
-  z-index: 1000;
+  z-index: 10000;
   border-right: 1px solid #D9FFF5; }
   .nav-overlay {
     overflow: hidden; }
