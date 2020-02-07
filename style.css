@@ -576,9 +576,7 @@
       width: 50%;
       padding-left: 0;
       flex-grow: 1; }
-    .price-list__span:nth-child(2) {
-      width: 15%; }
-    .price-list__span:nth-child(3) {
+    .price-list__span:nth-child(2), .price-list__span:nth-child(3) {
       width: 15%; }
     .price-list__span:last-child {
       width: 120px; }
